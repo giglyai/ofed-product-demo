@@ -7,3 +7,5 @@ Watch the published demo at:
 https://giglyai.github.io/ofed-product-demo/
 
 The video uses public-facing platform content only.
+
+The public page also includes the October 2026 OfEd angel-round pitch deck.

@@ -70,6 +70,49 @@
         font-size: 14px;
         font-weight: 700;
       }
+      .deck {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 28px;
+        align-items: center;
+        margin-top: 32px;
+        padding: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(12px);
+      }
+      .deck-label {
+        margin: 0 0 8px;
+        color: #f4c56b;
+        font-size: 12px;
+        font-weight: 850;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+      .deck h2 { margin: 0; font-size: 26px; letter-spacing: -0.025em; }
+      .deck-copy {
+        margin: 9px 0 0;
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      .deck-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 18px;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 12px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.08);
+        font-size: 14px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+      .button-primary { border-color: #f4c56b; background: #f4c56b; color: #071a31; }
       footer {
         display: flex;
         justify-content: space-between;
@@ -83,6 +126,9 @@
         main { padding-top: 34px; }
         .eyebrow { margin-top: 40px; }
         footer { flex-direction: column; }
+        .deck { grid-template-columns: 1fr; }
+        .deck-actions { width: 100%; }
+        .button { flex: 1; }
       }
     </style>
   </head>
@@ -107,6 +153,17 @@
         <span class="fact">Student portfolios</span>
         <span class="fact">Public newsroom</span>
       </div>
+      <section class="deck" aria-labelledby="pitch-deck-title">
+        <div>
+          <p class="deck-label">Angel round - October 2026</p>
+          <h2 id="pitch-deck-title">OfEd investor pitch deck</h2>
+          <p class="deck-copy">18 slides covering the problem, product, market, business model, traction and raise.</p>
+        </div>
+        <div class="deck-actions">
+          <a class="button button-primary" href="ofed-pitch-deck-angel.pdf" target="_blank" rel="noopener">View pitch deck</a>
+          <a class="button" href="ofed-pitch-deck-angel.pdf" download>Download PDF</a>
+        </div>
+      </section>
       <footer>
         <span>OfEd — public infrastructure for personalised learning</span>
         <a href="https://ofed.app">Visit ofed.app</a>
